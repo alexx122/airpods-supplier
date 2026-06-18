@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AirPods Supplier</title>
+<title>AirPods & Cologne Supplier</title>
 
 <style>
 body{
@@ -27,18 +27,26 @@ margin:auto;
 padding:20px;
 }
 
+.products{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+margin-bottom:40px;
+}
+
 .card{
 background:rgba(0,0,0,.35);
 border-radius:25px;
 padding:30px;
 text-align:center;
 box-shadow:0 0 30px rgba(255,0,255,.35);
-margin-bottom:30px;
+border:2px solid #7200b8;
 }
 
 .card img{
 width:220px;
 max-width:100%;
+border-radius:15px;
 }
 
 .price{
@@ -55,38 +63,64 @@ color:white;
 text-decoration:none;
 border-radius:999px;
 font-weight:bold;
+margin-top:10px;
+transition:background 0.3s;
+}
+
+.btn:hover{
+background:#ff1493;
 }
 
 .contact{
 margin-top:40px;
 text-align:center;
 font-size:1.1rem;
+background:rgba(0,0,0,.35);
+border-radius:25px;
+padding:20px;
+box-shadow:0 0 30px rgba(255,0,255,.35);
+}
+
+@media (max-width: 768px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
 </head>
 <body>
 
 <header>
-🎧 AIRPODS SUPPLIER
+🎧 AIRPODS & COLOGNE SUPPLIER
 </header>
 
 <div class="container">
 
+<div class="products">
+
 <div class="card">
-<img src="https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800" alt="AirPods">
-
+<img src="https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=800" alt="AirPods Pro">
 <h2>AirPods Pro</h2>
-
 <div class="price">$120</div>
-
-<a class="btn" href="YOUR_STRIPE_PAYMENT_LINK">
+<a class="btn" href="tel:7404872644">
 BUY NOW
 </a>
 </div>
 
+<div class="card">
+<img src="https://images.unsplash.com/photo-1595524985223-e615f46ae61b?w=800" alt="Cologne">
+<h2>Premium Cologne</h2>
+<div class="price">$120</div>
+<a class="btn" href="tel:7404872644">
+BUY NOW
+</a>
+</div>
+
+</div>
+
 <div class="contact">
-<p>📱 Phone: YOUR PHONE NUMBER</p>
-<p>📧 Email: YOUR GMAIL</p>
+<p>📱 Phone: 7404872644</p>
+<p>📧 Email: alexxpartin103@gmail.com</p>
 </div>
 
 </div>
